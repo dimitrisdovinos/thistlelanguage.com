@@ -15,10 +15,9 @@ body {
   }
 }
 
-.site-header {
+.site-header img {
   height: 600px;
-  background: url("/assets/banner-1.jpg") 50% 50% no-repeat;
-  background-size: cover;
+  object-fit: cover;
 }
 
 .site-footer {
