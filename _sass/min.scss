@@ -1,0 +1,32 @@
+
+
+body {
+  background: #F4F4F5;
+}
+
+.navbar-main {
+  .navbar-brand {
+    position: absolute;
+    background: #FFF;
+    top: 0;
+    img {
+      width: 120px;
+    }
+  }
+}
+
+.site-header {
+  height: 600px;
+  background: url("/assets/banner-1.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.site-footer {
+}
+
+.home-courses {
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+}
