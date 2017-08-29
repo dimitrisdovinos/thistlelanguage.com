@@ -25,6 +25,9 @@ url: "https://vassilis.github.io/thistlelanguage.com/" # the base hostname & pro
 twitter_username: jekyllrb
 github_username:  jekyll
 
+plugins:
+  - bootstrap
+
 # Build settings
 # markdown: kramdown
 # theme: minima
