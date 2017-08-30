@@ -3,14 +3,33 @@
 <footer class="site-footer mt-5 py-5 bg-dark">
   <div class="container">
     <div class="row">
-      <div class="col text-white">
+      <div class="col col-md-3">
+        <div class="list-group">
+          <a class="bg-dark text-white list-group-item list-group-item-action {% if page.url == "/" %}active{% endif %}" href="{{ site.github.url }}/">Home <span class="sr-only">(current)</span></a>
+          <a class="bg-dark text-white list-group-item list-group-item-action {% if page.url == "/en/parents/" %}active{% endif %}" href="{{ site.github.url }}/en/parents">Parents</a>
+          <a class="bg-dark text-white list-group-item list-group-item-action {% if page.url == "/en/students/" %}active{% endif %}" href="{{ site.github.url }}/en/students">Students</a>
+          <a class="bg-dark text-white list-group-item list-group-item-action {% if page.url == "/en/news/" %}active{% endif %}" href="{{ site.github.url }}/en/news">News</a>
+        </div>
+      </div>
+      <div class="col col-md-3">
+        <div class="list-group">
+          <a class="bg-dark text-white list-group-item list-group-item-action {% if page.url == "/en/courses/young-learners/" %}active{% endif %}" href="{{ site.github.url }}/en/courses/young-learners">Courses for Young Leaners <span class="sr-only">(current)</span></a>
+          <a class="bg-dark text-white list-group-item list-group-item-action {% if page.url == "/en/courses/teenagers/" %}active{% endif %}" href="{{ site.github.url }}/en/courses/teenagers">Courses for Teenagers</a>
+          <a class="bg-dark text-white list-group-item list-group-item-action {% if page.url == "/en/courses/adults/" %}active{% endif %}" href="{{ site.github.url }}/en/courses/adults">Courses for Adults</a>
+          <a class="bg-dark text-white list-group-item list-group-item-action {% if page.url == "/en/courses/exams/" %}active{% endif %}" href="{{ site.github.url }}/en/courses/exams">Exam Courses</a>
+        </div>
+      </div>
+      <div class="col col-md-5 ml-auto text-white">
         <h3 class="text-secondary">Thistle School of English</h3><br>
-        Proastiou 8<br>
-        Halkida<br><br>
+        Telephone: 2221 400853<br>
+        Proastiou 8, Halkida<br><br />
+        <a class="btn btn-primary" target="_blank" href="https://www.google.gr/maps/place/Proastiou+8,+Chalkida+341+00/@38.4677346,23.5990351,17z/data=!3m1!4b1!4m5!3m4!1s0x14a117a36d81cad3:0x61c09f610e7ccf30!8m2!3d38.4677346!4d23.6012238"><i class="material-icons mr-2 align-middle">place</i><span class="align-middle">View Map</span></a><br><br />
 
-        School Director: Dimitris Dovinos <br>
-        Telephone: <br>
-        Email: info@thistlelanguage.com
+        School Director: Dimitris Dovinos<br>
+        Email: <a class="text-white" href="mailto:info@thistlelanguage.com" target="_blank">info@thistlelanguage.com</a><br /><br />
+
+        Director of Studies and teacher: Dianne Conner (MA English Literature, Trinity CertTESOL, Cambridge DELTA)<br>
+        Email: <a class="text-white" href="mailto:dianne@thistlelanguage.com" target="_blank">dianne@thistlelanguage.com</a>
       </div>
     </div>
   </div>

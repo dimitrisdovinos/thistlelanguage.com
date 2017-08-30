@@ -4,6 +4,7 @@
 @import "bootstrap/bootstrap";
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 
 body {
@@ -46,4 +47,8 @@ body {
 
 .card-title {
   font-family: 'Quicksand', sans-serif;
+}
+
+.list-group-item.active {
+  background-color: $purple !important;
 }
