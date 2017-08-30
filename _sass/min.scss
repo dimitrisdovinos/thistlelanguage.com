@@ -52,3 +52,9 @@ body {
 .list-group-item.active {
   background-color: $purple !important;
 }
+
+.material-icons {
+  &.medium {
+    font-size: 32px;
+  }
+}
