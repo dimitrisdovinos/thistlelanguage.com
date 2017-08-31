@@ -1,5 +1,8 @@
 
 
+{% assign locale_url_part = page.locale | prepend: "/" | append: "/" %}
+{% assign page_url_without_locale = page.url | remove_first: locale_url_part %}
+
 <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="{{ site.github.url }}/{{ page.locale }}"><img src="{{ site.github.url }}/assets/logo.svg" /></a>
@@ -23,9 +26,9 @@
         </li>
         <li class="nav-item {% if page.url == "/{{ page.locale }}/news/" %}active{% endif %}">
           {% if page.locale == "en" %}
-            <a class="nav-link btn btn-secondary text-white ml-3" href="{{ site.github.url }}/el/">Ελληνικά</a>
+            <a class="nav-link btn btn-secondary text-white ml-3" href="{{ site.github.url }}/el/{{ page_url_without_locale }}">Ελληνικά</a>
           {% else %}
-            <a class="nav-link btn btn-secondary text-white ml-3" href="{{ site.github.url }}/en/">English</a>
+            <a class="nav-link btn btn-secondary text-white ml-3" href="{{ site.github.url }}/en/{{ page_url_without_locale }}">English</a>
           {% endif %}
         </li>
       </ul>
