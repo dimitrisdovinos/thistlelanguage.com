@@ -2,24 +2,31 @@
 
 <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="{{ site.github.url }}/"><img src="{{ site.github.url }}/assets/logo.svg" /></a>
+    <a class="navbar-brand" href="{{ site.github.url }}/{{ page.locale }}"><img src="{{ site.github.url }}/assets/logo.svg" /></a>
     <a class="navbar-toggler ml-auto" href="#footer">
       <span class="navbar-toggler-icon"></span>
     </a>
 
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item {% if page.url == "/" %}active{% endif %}">
-          <a class="nav-link" href="{{ site.github.url }}/">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item {% if page.url == "{{ page.locale }}/" %}active{% endif %}">
+          <a class="nav-link" href="{{ site.github.url }}/{{ page.locale }}">{{ site.data.i18n.[page.locale].home }}</a>
         </li>
-        <li class="nav-item {% if page.url == "/en/parents/" %}active{% endif %}">
-          <a class="nav-link" href="{{ site.github.url }}/en/parents">Parents</a>
+        <li class="nav-item {% if page.url == "{{ page.locale }}/parents/" %}active{% endif %}">
+          <a class="nav-link" href="{{ site.github.url }}/{{ page.locale }}/parents">{{ site.data.i18n.[page.locale].parents }}</a>
         </li>
-        <li class="nav-item {% if page.url == "/en/students/" %}active{% endif %}">
-          <a class="nav-link" href="{{ site.github.url }}/en/students">Students</a>
+        <li class="nav-item {% if page.url == "/{{ page.locale }}/students/" %}active{% endif %}">
+          <a class="nav-link" href="{{ site.github.url }}/{{ page.locale }}/students">{{ site.data.i18n.[page.locale].students }}</a>
         </li>
-        <li class="nav-item {% if page.url == "/en/news/" %}active{% endif %}">
-          <a class="nav-link" href="{{ site.github.url }}/en/news">News</a>
+        <li class="nav-item {% if page.url == "/{{ page.locale }}/news/" %}active{% endif %}">
+          <a class="nav-link" href="{{ site.github.url }}/{{ page.locale }}/news">{{ site.data.i18n.[page.locale].news }}</a>
+        </li>
+        <li class="nav-item {% if page.url == "/{{ page.locale }}/news/" %}active{% endif %}">
+          {% if page.locale == "en" %}
+            <a class="nav-link btn btn-secondary text-white ml-3" href="{{ site.github.url }}/el/">Ελληνικά</a>
+          {% else %}
+            <a class="nav-link btn btn-secondary text-white ml-3" href="{{ site.github.url }}/en/">English</a>
+          {% endif %}
         </li>
       </ul>
     </div>
