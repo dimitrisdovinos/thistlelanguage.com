@@ -9,11 +9,11 @@ image: banner-1.jpg
 <div class="container my-5" style="min-height: 800px;">
   {% for post in site.categories.en %}
     {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-    <div class="card">
+    <div class="card mb-5">
       <div class="card-body">
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h2>{{ post.title | escape }}</h2>
-        <div class="post-text">
+        <div class="post-text lead">
           {{ post.content }}
         </div>
       </div>
