@@ -3,6 +3,13 @@
 <footer id="footer" class="site-footer mt-5 py-5 bg-dark">
   <div class="container">
     <div class="row">
+      <div class="col-12 d-lg-none mb-5">
+        {% if page.locale == "en" %}
+          <a class="nav-link btn btn-secondary text-white ml-3" href="{{ site.github.url }}/el/{{ page_url_without_locale }}">Ελληνικά</a>
+        {% else %}
+          <a class="nav-link btn btn-secondary text-white ml-3" href="{{ site.github.url }}/en/{{ page_url_without_locale }}">English</a>
+        {% endif %}
+      </div>
       <div class="col-12 col-md-6 col-lg-3">
         <div class="list-group mb-5">
           <a class="bg-dark text-white list-group-item list-group-item-action {% if page.url == "/" %}active{% endif %}" href="{{ site.github.url }}/">{{ site.data.i18n.[page.locale].home }}</a>
@@ -20,7 +27,7 @@
         </div>
       </div>
       <div class="col-md-12 col-lg-5 ml-auto text-white">
-        <h3 class="text-secondary">Thistle School of English</h3><br>
+        <h2>Thistle School of English</h2><br>
         {{ site.data.i18n.[page.locale].tel }}: 2221 400853<br>
         {{ site.data.i18n.[page.locale].address }}<br><br />
         <a class="btn btn-primary" target="_blank" href="https://www.google.gr/maps/place/Proastiou+8,+Chalkida+341+00/@38.4677346,23.5990351,17z/data=!3m1!4b1!4m5!3m4!1s0x14a117a36d81cad3:0x61c09f610e7ccf30!8m2!3d38.4677346!4d23.6012238">
