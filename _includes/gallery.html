@@ -1,0 +1,34 @@
+
+
+<div id="pswp-gallery" itemscope itemtype="http://schema.org/ImageGallery" class="my-5 row">
+  <figure class="figure col-md-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="{{ site.github.url }}/assets/s-v-1.jpg" itemprop="contentUrl" data-size="800x1195">
+      <img class="figure-img img-fluid rounded" src="{{ site.github.url }}/assets/s-v-1-sm.jpg" itemprop="thumbnail" alt="Image description" />
+    </a>
+    <!-- <figcaption class="figure-caption" itemprop="caption description">Image caption  1</figcaption> -->
+  </figure>
+  <figure class="figure col-md-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="{{ site.github.url }}/assets/s-v-2.jpg" itemprop="contentUrl" data-size="800x1195">
+      <img class="figure-img img-fluid rounded" src="{{ site.github.url }}/assets/s-v-2-sm.jpg" itemprop="thumbnail" alt="Image description" />
+    </a>
+    <!-- <figcaption class="figure-caption" itemprop="caption description">Image caption  1</figcaption> -->
+  </figure>
+  <figure class="figure col-md-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="{{ site.github.url }}/assets/s-v-3.jpg" itemprop="contentUrl" data-size="800x1195">
+      <img class="figure-img img-fluid rounded" src="{{ site.github.url }}/assets/s-v-3-sm.jpg" itemprop="thumbnail" alt="Image description" />
+    </a>
+    <!-- <figcaption class="figure-caption" itemprop="caption description">Image caption  1</figcaption> -->
+  </figure>
+  <figure class="figure col-md-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="{{ site.github.url }}/assets/s-v-4.jpg" itemprop="contentUrl" data-size="800x1195">
+      <img class="figure-img img-fluid rounded" src="{{ site.github.url }}/assets/s-v-4-sm.jpg" itemprop="thumbnail" alt="Image description" />
+    </a>
+    <!-- <figcaption class="figure-caption" itemprop="caption description">Image caption  1</figcaption> -->
+  </figure>
+</div>
+
+{% include pswp.html %}
+
+<script>
+  initPhotoSwipeFromDOM('#pswp-gallery');
+</script>

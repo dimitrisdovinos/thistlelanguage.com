@@ -10,6 +10,13 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
+  <!-- http://photoswipe.com/documentation/getting-started.html -->
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/photoswipe.css">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/default-skin.css">
+  <script src="{{ site.github.url }}/assets/photoswipe.js"></script>
+  <script src="{{ site.github.url }}/assets/photoswipe-ui-default.js"></script>
+  <script src="{{ site.github.url }}/assets/pswp.js"></script>
+
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
