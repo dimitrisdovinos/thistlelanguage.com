@@ -1,8 +1,22 @@
 ---
 title: News
 permalink: "/el/news/"
-layout: news
+layout: default
 locale: el
+image: banner-1.jpg
 ---
 
-<div style="height:1000px;"></div>
+<div class="container my-5" style="min-height: 800px;">
+  {% for post in site.categories.el %}
+    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+    <div class="card">
+      <div class="card-body">
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h2>{{ post.title | escape }}</h2>
+        <div class="post-text">
+          {{ post.content }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
