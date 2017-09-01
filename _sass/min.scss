@@ -3,18 +3,18 @@
 @import "colors";
 @import "bootstrap/bootstrap";
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 
 body {
   background: #F4F4F5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .post-header {
   .post-title {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     @extend .text-primary;
   }
 }
@@ -61,8 +61,13 @@ body {
   }
 }
 
+strong {
+  font-weight: 700;
+}
+
+h1,h2,h3,h4,h5,h6,
 .card-title {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .list-group-item.active {
