@@ -9,7 +9,7 @@ collections:
     title: Uploads
     output: true
 email: info@thistlelanguage.com
-description: 'English for adults and children at Chalkida'
+description: English for adults and children at Chalkida
 baseurl: ''
 url: https://dimitrisdovinos.github.io/thistlelanguage.com/
 twitter_username: jekyllrb
