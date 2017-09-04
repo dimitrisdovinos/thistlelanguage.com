@@ -1,5 +1,5 @@
 ---
-title: Thistle Language School
+title: Thistle School of English
 timezone: UTC
 collections:
   posts:
@@ -9,11 +9,7 @@ collections:
     title: Uploads
     output: true
 email: info@thistlelanguage.com
-description: 'Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
-
-'
+description: 'English for adults and children at Chalkida'
 baseurl: ''
 url: https://dimitrisdovinos.github.io/thistlelanguage.com/
 twitter_username: jekyllrb
