@@ -1,5 +1,5 @@
 ---
-title: Thistle School of English
+title: Thistle School of English, Αγγλικά - Ενήλικες - Χαλκίδα
 timezone: UTC
 collections:
   posts:
@@ -9,9 +9,9 @@ collections:
     title: Uploads
     output: true
 email: info@thistlelanguage.com
-description: English for adults and children at Chalkida
+description: English for adults and children at Chalkida, Αγγλικά - Ενήλικες - Χαλκίδα
 baseurl: ''
-url: https://dimitrisdovinos.github.io/thistlelanguage.com/
+url: http://thistlelanguage.com//
 twitter_username: jekyllrb
 github_username: jekyll
 google_analytics: UA-105700036-1
